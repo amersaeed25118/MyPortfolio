@@ -124,6 +124,7 @@ header .container .links .icon {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
+  
 }
 
 @media (min-width: 769px) {
@@ -245,10 +246,18 @@ main .container .view-work:hover {
   transform: scale(1.1);
 }
 main .container .social-icons i {
-  color: var(--main-color);
-  font-size: 25px;
+  color: #0a324e;
+  font-size: 35px;
   margin: 0 10px;
   display: inline-block;
+  transition:0.5s ease;
+}
+main .container .social-icons i:hover{
+transform:scale(1.1)  rotate(360deg);
+}
+
+main .container .social-icons i.fa-instagram{
+  color: rgb(138, 43, 43);
 }
 
 /* End Main Part */
@@ -304,6 +313,10 @@ transition: 0.5s ease;
   padding: 0 10px 10px;
 }
 
+.projects .container .proj-holder .proj div a{
+  text-decoration: none;
+  color: #900c3f;
+}
 .projects .container .proj-holder .proj div span {
   font-weight: 800;
   padding: 0 10px 10px;
@@ -370,11 +383,7 @@ transition: 0.5s ease;
   flex-basis: 40%;
   flex-wrap: wrap;
 }
-/* @media (max-width:767px){
-    .contact .contacts-cards{
-        flex-basis: 80%;
-    }
-} */
+
 
 .contact .contacts-cards .card {
   border-radius: 15px;
@@ -419,13 +428,21 @@ footer .container p {
 }
 
 footer .container i {
-  color: white;
+  color: #1769a3;
+}
+
+footer .container i.fa-instagram{
+  color: rgb(138, 43, 43);
+
 }
 
 @media (min-width:768px){
-    footer .container p,
-    footer .container i {
+    footer .container p {
       font-size: 20px;
+      }
+
+      footer .container i {
+        font-size: 30px;
       }
       footer .container i{
           margin-left: 15px;
